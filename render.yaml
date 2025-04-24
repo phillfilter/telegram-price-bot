@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: telegram-price-bot
+    env: python
+    buildCommand: ""
+    startCommand: bash start.sh
+    plan: free
+    envVars:
+      - key: BOT_TOKEN
+        value: جایگزین_توکن_ربات_تو
+      - key: ADMIN_CHAT_ID
+        value: عدد_آی‌دی_تلگرام_ادمین
